@@ -3,6 +3,6 @@
  * @return {number}
  */
 var smallestEvenMultiple = function(n) {
-    return [n].map(num => num % 2==0 ? num : num*2)[0];
+    return n % 2===0 ? n : n*2;
 };
 console.log(smallestEvenMultiple(5));
